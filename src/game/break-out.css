@@ -1,0 +1,39 @@
+
+
+.game {
+  margin:5%;
+  background: #fff;
+}
+
+circle {
+  fill: red;
+}
+
+rect {
+  fill : black;
+
+}
+
+.node {
+  fill: yellow;
+}
+
+
+.screen {
+  background: green;
+  display: flex;
+}
+
+.gameover {
+  background: red;
+  color:#fff;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.text-center {
+  color:#fff;
+  font-size: 50px;
+  text-anchor: middle;
+}
