@@ -8,7 +8,7 @@
 ### Run
       npm install
       npm start
-      open http://0.0.0.0:3000/ in browser
+      open http://localhost:3000/ in browser
 
 ### Test
       npm test

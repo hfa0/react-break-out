@@ -227,6 +227,7 @@ class BreakOut extends Component {
   render() {
 
     return (
+
       <div className="game">
         <div>
         {this.state.isGameOver ? (
@@ -258,8 +259,9 @@ class BreakOut extends Component {
           <button onClick={this.startGame}>start Game</button>
           <button onClick={this.stopGame}>stop Game</button>
           <button onClick={this.resetGame}>reset Game</button>
-        </div>
+        </div >
       </div>
+      
     );
   }
 }

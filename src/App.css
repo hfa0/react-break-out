@@ -9,6 +9,14 @@
   color: white;
 }
 
+.instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+}
+
 .App-link {
   color: #61dafb;
 }
