@@ -14,15 +14,13 @@ const Node = ({ x, y, w, h, alive, index }) => (
   <g style={{display:alive?'block':'none'}}>
     <rect className="node" x={x} y={y} width={w} height={h} rx="3" ry="3" />
   </g>
-
-
 );
 
 var createNodes = (screenWidth, screenHeight, line) => {
   var nodes = [];
   var minPadding = 2;
-  var nodeHeight = 30;
-  var nodeColCount = 5;
+  var nodeHeight = 15;
+  var nodeColCount = 10;
   var x = parseInt((screenWidth - minPadding*2)/nodeColCount)
   var rows = parseInt((screenHeight*line - minPadding*2)/nodeHeight)
   var w = x * 0.9;
@@ -185,8 +183,6 @@ class BreakOut extends Component {
       alphaBall = flip(alphaBall)
     }
 
-
-
     if (yBall < this.ballRadius) {
       //ball bounces on top
       alphaBall = flip(alphaBall)
@@ -242,13 +238,12 @@ class BreakOut extends Component {
                                x={node.x}
                                y={node.y}
                                w={node.w}
-                               h={node.h}>{index}</Node>;
+                               h={node.h}/>;
                 })}
                 <Ball x={this.state.xBall}
                       y={this.state.yBall}
                       ballRadius={this.ballRadius} />
                 <Bar x={this.state.xBar}
-                     onKeyPress={this.handleKeyPress}
                      y={this.state.yBar}
                      w={this.barWidth}
                      h={this.barHeight}/>
@@ -261,7 +256,7 @@ class BreakOut extends Component {
           <button onClick={this.resetGame}>reset Game</button>
         </div >
       </div>
-      
+
     );
   }
 }
