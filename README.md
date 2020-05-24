@@ -1,14 +1,15 @@
 # Break Out React App
 
+A simple break-out game build with react.
 
-## Dependencies
+## Demo:
 
-* d3.js
+[link](http://hfa0.github.io/react-break-out)
 
-### Run
-      npm install
-      npm start
-      open http://localhost:3000/ in browser
+## Run
 
-### Test
-      npm test
+```
+yarn
+yarn start
+open http://localhost:3000/ in browser
+```
