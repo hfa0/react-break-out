@@ -37,3 +37,14 @@ rect {
   font-size: 50px;
   text-anchor: middle;
 }
+
+.control-input {
+  display: flex;
+  color: #000;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.control-input-entry {
+  margin-right: 5px;
+}
