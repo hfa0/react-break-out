@@ -127,7 +127,7 @@ class BreakOut extends Component {
     if (key === 37) dxBar = -vBar;
 
     if ((xBar + dxBar) < 0 || (xBar + parseFloat(this.state.barWidth) + dxBar) > this.screenWidth) {
-      console.log('nope')
+      // console.log('nope')
       return
     };
 
@@ -212,9 +212,9 @@ class BreakOut extends Component {
       if (this.bounceSucceed(xBall, xBar)) {
         //ball bounes on bar
         alphaBall = flip(alphaBall)
-        console.log("bounced");
+        // console.log("bounced");
       } else {
-        console.log("game over");
+        // console.log("game over");
         return this.gameOver()
       }
     }
